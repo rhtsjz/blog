@@ -1,11 +1,11 @@
-###Q:对于Java的垃圾回收机制了解吗？
-###A:了解一些
-####是什么：
+### Q:对于Java的垃圾回收机制了解吗？
+### A:了解一些
+#### 是什么：
 自动垃圾收集(Automatic Garbage Collection)是一个查看堆内存，识别哪些对象正在使用哪些不是，以及删除未使用的对象的过程。  
 一个正在使用的对象或一个被引用的对象，意味着你的程序的某个部分仍然保持着一个指向该对象的指针。
 一个未被使用的对象或未被医用的对象，不再被你的程序的任何部分所引用。
 所以未被应用的对象所使用的内存可以被回收。
-####怎么做：
+#### 怎么做：
 - 第一步：标记(Marking)  
 这一步垃圾收集器识别哪些内存正在使用和哪些不在使用。
 ![Marking](http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/images/gcslides/Slide3.png)
@@ -22,5 +22,6 @@
 - JVM 分代(JVM Generations)
 堆分成：新生代，老年代，以及永久代
 ![JVM Generations](http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/images/gcslides/Slide5.png)
-####怎么做2(分代垃圾回收过程)：
-- 
+#### 怎么做2(分代垃圾回收过程)：
+- 首先，任何新的对象被分配到 eden 空间。两个 survivor 空间都是空的。
+![eden](http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/images/gcslides/Slide13.png)
