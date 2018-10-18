@@ -12,7 +12,7 @@
 从身份证号 `idCard` 中
 提取省份得到文件 `province.txt` ,
 提取出生年得到文件 `birth_year.txt`
-从 `score`(一行中有两个 `score` ,此处使用的是行尾的) 中提取分数得到文件 `score.txt`
+从 `score`(一行中有两个 `score` ,此处使用的是行尾的) 中提取分数得到文件 `score.txt` (此处对分数做了向下取整)
 从 `unit` 中提取公司得到文件 `unit.txt`
 ## 数据展示
 1. 在 `http://jsfiddle.net/` 将年龄和分数做了饼图这样看起来更直观一些
