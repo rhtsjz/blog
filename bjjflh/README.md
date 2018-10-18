@@ -18,10 +18,11 @@
 1. 在 `http://jsfiddle.net/` 将年龄和分数做了饼图这样看起来更直观一些
 [年龄](http://jsfiddle.net/rhtsjz/3dLxq6ye/show)
 [分数](http://jsfiddle.net/rhtsjz/vn41y35j/show)
-2. top10
+2. top10  
 公司
+
 人数 | 公司
------------- | -------------
+--- | ---
 137 | 北京华为数字技术有限公司
 73 | 中央电视台
 57 | 北京首钢建设集团有限公司
