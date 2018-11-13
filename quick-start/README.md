@@ -1,1 +1,1 @@
-[redis search](redis_search.md)
+1. [通过Redis进行全文检索](redis_search.md)
