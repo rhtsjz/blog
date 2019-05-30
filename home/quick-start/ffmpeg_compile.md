@@ -135,5 +135,5 @@ hash -d ffmpeg
 现在可以使用 `ffmpeg` （还有 `ffprobe` ， `lame` 和 `x264` ）。 所在目录为 `~/bin/`
 
 ## 参考链接
-[Compile FFmpeg on CentOS](https://trac.ffmpeg.org/wiki/CompilationGuide/Centos)
-[CompilationGuide – FFmpeg](https://trac.ffmpeg.org/wiki/CompilationGuide)
+- [Compile FFmpeg on CentOS](https://trac.ffmpeg.org/wiki/CompilationGuide/Centos)
+- [CompilationGuide – FFmpeg](https://trac.ffmpeg.org/wiki/CompilationGuide)
