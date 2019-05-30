@@ -1,6 +1,6 @@
-#在CentOS上编译ffmpeg的静态版本
+# 在CentOS上编译ffmpeg的静态版本
 
-##获取依赖
+## 获取依赖
 注意: `#` 表示该命令应该以超级用户或root身份执行，并且在本指南中只有 `yum` 命令需要。
 获取依赖项。这些是编译所必需的。
 ```bash
@@ -12,7 +12,7 @@ mkdir ~/ffmpeg_sources
 ```
 
 ##编译和安装
-###NASM
+### NASM
 某些库使用的汇编程序。强烈推荐否则您的构建结果可能非常慢。
 ```bash
 cd ~/ffmpeg_sources
@@ -24,7 +24,7 @@ cd nasm-2.14.02
 make
 make install
 ```
-###Yasm
+### Yasm
 某些库使用的汇编程序。强烈推荐否则您的构建结果可能非常慢。
 ```bash
 cd ~/ffmpeg_sources
@@ -35,7 +35,7 @@ cd yasm-1.3.0
 make
 make install
 ```
-###libx264
+### libx264
 H.264视频编码器
 需要使用 `--enable-gpl` `--enable-libx264`配置 `ffmpeg`。
 ```bash
@@ -46,7 +46,7 @@ PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" ./configure --prefix="$HOME/f
 make
 make install
 ```
-###libx265
+### libx265
 H.265 / HEVC视频编码器。
 需要使用 `--enable-gpl` `--enable-libx264`配置 `ffmpeg`。
 ```bash
@@ -57,7 +57,7 @@ cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX="$HOME/ffmpeg_build" -DENABLE_S
 make
 make install
 ```
-###libfdk_aac
+### libfdk_aac
 AAC音频编码器。
 需要使用 `--enable-libfdk_aac` 配置 `ffmpeg` （如果包含 `--enable-nonfree` ，还需要使用 `--enable-gpl` ）。
 ```bash
@@ -69,7 +69,7 @@ autoreconf -fiv
 make
 make install
 ```
-###libmp3lame
+### libmp3lame
 MP3音频编码器。
 需要使用 `--enable-libmp3lame` 配置 `ffmpeg` 。
 ```bash
@@ -81,7 +81,7 @@ cd lame-3.100
 make
 make install
 ```
-###libopus
+### libopus
 Opus音频解码器和编码器。
 需要使用 `--enable-libopus`配置 `ffmpeg` 。
 ```bash
@@ -93,7 +93,7 @@ cd opus-1.3.1
 make
 make install
 ```
-###libvpx
+### libvpx
 VP8 / VP9视频编码器和解码器。
 需要使用 `--enable-libvpx` 配置 `ffmpeg` 。
 ```bash
@@ -104,7 +104,7 @@ cd libvpx
 make
 make install
 ```
-###FFmpeg
+### FFmpeg
 ```bash
 cd ~/ffmpeg_sources
 curl -O -L https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2
@@ -131,9 +131,9 @@ make
 make install
 hash -d ffmpeg
 ```
-##编译现已完成
+## 编译现已完成
 现在可以使用 `ffmpeg` （还有 `ffprobe` ， `lame` 和 `x264` ）。 所在目录为 `~/bin/`
 
-##参考链接
+## 参考链接
 [Compile FFmpeg on CentOS](https://trac.ffmpeg.org/wiki/CompilationGuide/Centos)
 [CompilationGuide – FFmpeg](https://trac.ffmpeg.org/wiki/CompilationGuide)
