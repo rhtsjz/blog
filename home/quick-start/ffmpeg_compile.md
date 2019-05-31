@@ -1,7 +1,7 @@
 # 在CentOS上编译ffmpeg的静态版本
 
 ## 获取依赖
-注意: `#` 表示该命令应该以超级用户或root身份执行，并且在本指南中只有 `yum` 命令需要。
+注意: `#` 表示该命令应该以超级用户或root身份执行，并且在本指南中只有 `yum` 命令需要。  
 获取依赖项。这些是编译所必需的。
 ```bash
 # yum install autoconf automake bzip2 bzip2-devel cmake freetype-devel gcc gcc-c++ git libtool make mercurial pkgconfig zlib-devel
